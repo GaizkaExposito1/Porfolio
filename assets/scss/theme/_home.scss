@@ -1,0 +1,328 @@
+/* Header */
+
+.header {
+	//padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	@include transition (all 0.4s ease-in-out);
+	z-index: 100;
+	min-height: 60px;
+
+	.navbar {
+		padding: 0;
+		margin: 1%;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+
+	}
+	
+	.logo-icon {
+		height: 34px;
+		width: auto;
+
+	}
+
+}
+
+
+
+
+
+.nav {
+  width: 100%;
+  height: var(--nav-height);
+  top: 0;
+  left: 0;
+	background-color: $nav;
+  display: flex;
+	justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 2s;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+.nav--hidden {
+  transform: translateY(calc(-10 * var(--nav-height)));
+  box-shadow: none;
+}
+
+.nav__link {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: bold;
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0rem); 
+  padding-left: var(--bs-gutter-x, 0rem); 
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.parallax{
+  height:300px;
+  background-image:url('../assets/img/bg-img.jpg');
+  background-size:cover;
+  background-attachment: fixed;
+}
+.parallax2{
+  height:100px;
+  background-image:url('../assets/img/bg-img.jpg');
+  background-size:cover;
+  background-attachment: fixed;
+}
+.parallax3{
+  height:20px;
+  background-image:url('../assets/img/bg-img.jpg');
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+article{
+	width: 90%;
+}
+.header-shrink {	
+	@include box-shadow(0 1px 4px 0 rgba(0,0,0,.1));
+	background: $theme-bg-light;
+}
+
+.navbar-nav {
+	.nav-item {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 0.875rem;
+		&.active {
+			.nav-link {
+				@include opacity(1);
+			}
+		}
+	}
+	.nav-link {
+		color: #fff;
+		@include opacity(0.75);
+		font-weight: 600;
+		padding: 1rem;
+		text-decoration: none;
+		&:hover {
+			@include opacity(1);
+		}
+
+	}
+	
+	
+}
+
+
+.navbar-toggler {
+    border: 1px solid #fff;
+    //padding: 0.4rem 0.5rem;
+    outline: none !important;
+	.navbar-toggler-icon {
+	    background: url('../images/bars.svg') no-repeat left top;
+	    height: 20px;
+	    width: 27px;
+	}
+}
+
+
+
+
+
+/* Hero Block */
+.hero-block {
+	position: relative;
+	@include background-size(cover);
+	height: 620px;
+	padding-top: 130px;
+	
+}
+/* Stats Block */
+.stats-block {
+	.item {
+		line-height: 1.3;
+	}
+	.number {
+		font-size: 2.5rem;
+		font-weight: 700;
+		font-family: 'Montserrat', sans-serif;
+		
+	}
+	.unit {
+		font-size: 1.5rem;
+		color: rgba(0, 0, 0, 0.6);
+	}
+}
+
+/* Section Generic */
+.section {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+.section-heading {
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+.section-intro {
+	font-size: 1.125rem;
+}
+
+/* footer */
+.footer {
+	color: #fff;
+	a {
+		color: #fff;
+		&:hover {
+			color: #fff;
+		}
+	}
+	.social-list {
+		font-size: 1.5rem;
+	}
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+	.modal-dialog {
+	    max-width: 500px;
+	}
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .navbar-expand-lg .navbar-nav .nav-link {
+	    padding-left: 1rem;
+	    padding-right: 1rem;
+    }
+    
+    .modal-dialog {
+	    max-width: 700px;
+	}
+	
+	.countdown-box span {
+		padding: 0.5rem 1.5rem;
+		min-width: 90px;
+    }
+	 
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.modal-dialog {
+	    max-width: 800px;
+	}
+	
+
+	.venue-section  .figures-holder {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+	
+		
+		
+}
+
+
+//We occasionally use media queries that go in the other direction (the given screen size or smaller):
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {  }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+
+	.section {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+	
+	.hero-block {
+		height: auto;
+		padding-bottom: 5rem;
+	}
+	.hero-text-block h1.hero-heading {
+		font-size: 2.5rem;
+	}
+	.hero-text-block .hero-meta {
+		font-size: 1.25rem;
+	}
+	.hero-text-block .hero-intro {
+		font-size: 1.25rem;
+	}
+	.stats-block .number {
+		font-size: 1.75rem;
+	}
+	.stats-block .unit {
+		font-size: 1rem;
+	}
+	.speakers-section .card {
+		height: inherit;
+	}
+	
+	
+	.schedule-nav .nav-item .heading {
+		font-size: 0.875rem;
+	}
+	.schedule-nav .nav-item .meta {
+		font-size: 0.75rem;
+	}
+	.schedule-nav .nav-link {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.schedule-tab-content .item .meta {
+		position: static;
+		width: auto;
+	}
+	.schedule-tab-content .tab-pane:after, .schedule-tab-content .item:after {
+		display: none;
+	}
+	.schedule-tab-content .item .content {
+		padding-left: 0;
+	}
+	.schedule-tab-content .item {
+		background: $theme-bg-light;
+		padding: 1rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .header-has-bg {
+		background: $theme-bg-dark;
+	}
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+	
+ }
+
+
+
+
+

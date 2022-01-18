@@ -78,7 +78,7 @@ sr.reveal('.home__title', {})
 sr.reveal('.home__text', {delay: 200})
 sr.reveal('.home__img', {origin:'right', delay: 400})
 sr.reveal('.Titulo_seccion', {origin:'left', delay:250})
-sr.reveal('.skills__data',{interval: 200}); 
+
 
 //===================================//
 //===================================//
@@ -98,34 +98,32 @@ sr.reveal('.skills__data',{interval: 200});
 //======== Mostrar Proyectos ========//
 //===================================//
 //===================================//
-function mostrarFront() {
-  /*const abajo= document.getElementById('mostrar');
-  const arriba = document.getElementById('ocultar');
-  const divoculto = document.getElementById('oculto');
-if (abajo.style.display=='none') {
-  abajo.style.display='none';
-  arriba.style.display='inline';
-  divoculto.style.display='block';
-}else{
   abajo.style.display='block';
-  arriba.style.display='none';
-  divoculto.style.display='none';
-}
-*/
-const front= document.getElementById('frontend');
+$(document).ready(function(){  
+	$("#frontend").click(function () {
+            $('#oculto').toggle("slow");
+            $('#ocultar').toggle("slow");
+            $('#mostrar').toggle("slow");
+        });
 
+});
+$(document).ready(function(){  
+	$("#backend").click(function () {
+            $('#oculto2').toggle("slow");
+            $('#ocultar2').toggle("slow");
+            $('#mostrar2').toggle("slow");
+        });
 
-}
-function mostrarBack() {
-  const abajo= document.getElementById('mostrar1');
-  const arriba = document.getElementById('ocultar1');
-  const divoculto = document.getElementById('oculto1');
-}
-function mostrarOtros() {
-  const abajo= document.getElementById('mostrar2');
-  const arriba = document.getElementById('ocultar2');
-  const divoculto = document.getElementById('oculto2');
-}
+});
+$(document).ready(function(){  
+	$("#otros").click(function () {
+            $('#oculto3').toggle("slow");
+            $('#ocultar3').toggle("slow");
+            $('#mostrar3').toggle("slow");
+        });
+
+});
+
 
 
 //===================================//
