@@ -98,7 +98,6 @@ sr.reveal('.Titulo_seccion', {origin:'left', delay:250})
 //======== Mostrar Proyectos ========//
 //===================================//
 //===================================//
-  abajo.style.display='block';
 $(document).ready(function(){  
 	$("#frontend").click(function () {
             $('#oculto').toggle("slow");
