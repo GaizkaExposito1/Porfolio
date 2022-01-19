@@ -75,11 +75,33 @@
 .skills__css {
   width: 85%;
 }
-
-.skills__js {
+.skills__js{
   width: 75%;
 }
 
+.skills__java {
+  width: 65%;
+}
+
+.skills__php{
+  width: 70%;
+}
+.skills__laravel{
+  width: 65%;
+}
+.skills__photoshop{
+  width: 60%;
+}
+.skills__wordpress{
+  width: 70%;
+}
+
+.imagenpequeña{
+  width: 5%;
+}
+.spaciado{
+  padding-right: 2%;
+}
 #oculto{
   display: none;
 }
