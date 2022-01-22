@@ -12299,6 +12299,7 @@ article {
   width: 90%;
   padding-left: 4%;
   padding-right: 4%;
+  padding-bottom: 4%;
 }
 
 /* .header-shrink {
@@ -12500,7 +12501,7 @@ s .hero-block {
 }
 
 .imgS_mi{
-  width: 20%;
+  width: 40%;
 }
 
 .Titulo_seccion{
