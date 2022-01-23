@@ -12566,3 +12566,11 @@ footer{
   width: 60%;
   margin-bottom: 5%;
 }
+
+a{
+  text-decoration: none !important;
+  color: #000 !important;
+}
+a:hover{
+  color: #000;
+}

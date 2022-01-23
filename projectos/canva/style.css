@@ -6,6 +6,7 @@
 }
 *{
   background-color: #eee34a;
+  overflow: hidden;
 }
 
 @keyframes slidein {
@@ -20,4 +21,40 @@
     margin-left: 75%;
     transform: rotate(360deg);
   }
+}
+
+header{
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  font-size: 300%;
+  text-align: center;
+  font-family: 'Amatic SC';
+  color: #FFF;
+  background-color:#eee34a;
+  z-index: 1
+}
+
+@keyframes animacion{
+  from{
+      width: 90%;;
+  }
+  to{
+      width: 10%;
+  }
+}
+
+span{
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 130px;
+  right: 0;
+  background-color:#eee34a;
+  border-left: 1px #FFF solid;
+  animation-name: animacion;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: bottom right;
 }
